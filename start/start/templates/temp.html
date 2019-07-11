@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Templates</title>
+</head>
+<body>
+<h1>Yahooooo its working {{name}}</h1>
+<form method="post" action="{% url 'home' %}">{% csrf_token %}
+<h3>Who is the father of computer ?<br><br>
+dennis ritchie : 
+<input type="radio" name="dennis"><br>
+<br>
+charls babbage : 
+<input type="radio" name="charles"><br>
+<br>
+tem berners lee : 
+<input type="radio" name="tem"><br>
+<br>
+diwas : 
+<input type="radio" name="diwas"><br>
+<br><br>
+<h3>where is silicon valley ?<br><br>
+usa : 
+<input type="radio" name="usa"><br>
+<br>
+canada : 
+<input type="radio" name="canada"><br>
+<br>
+india : 
+<input type="radio" name="india"><br>
+<br>
+nepal : 
+<input type="radio" name="nepal"><br>
+
+<input type="submit" name="sub">
+</form>
+</body>
+</html>
